@@ -10,6 +10,7 @@ function revokeClient() {
         sed -i "/^$1,.*/d" /etc/openvpn/ipp.txt
         cp /etc/openvpn/easy-rsa/pki/index.txt{,.bk}
         sed -i -e '/^[R]/d' /etc/openvpn/easy-rsa/pki/index.txt
+        rm /var/openvpn_clients/$1.ovpn
 }
 
 revokeClient $1
