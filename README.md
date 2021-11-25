@@ -1,4 +1,4 @@
-# OpenVPN-Installer-For-Webadmin 1 -- Work in Progress
+# OpenVPN-Installer-For-Webadmin
 
 Creates an OpenVPN server compatible with the OpenVPN-WebAdmin project.
 
@@ -6,6 +6,11 @@ Installs OpenVPN, vnstat, vnstati, and creates bash files required for creating/
 
 Only supported on Ubuntu >= 20. 
 
+```bash
+wget https://raw.githubusercontent.com/bhopkins0/OpenVPN-Installer-For-Webadmin/main/installvpn.sh
+chmod +x installvpn.sh
+./installvpn.sh
+```
 
 # Credits
 
