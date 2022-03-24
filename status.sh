@@ -1,6 +1,6 @@
 STATUS=$(service openvpn status)
 if [[ $STATUS == *"Active: active"* ]]; then
-  echo "OpenVPN is running"
+  echo "<h1 class='text-success'>OpenVPN is running"
 else
-  echo "OpenVPN is not running"
+  echo "<h1 class='text-danger'>OpenVPN is not running"
 fi
